@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Patient Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based healthcare patient dashboard application that displays patient medical information, vital signs, and diagnostic history.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This application serves as a patient management dashboard for healthcare providers, displaying comprehensive patient information with a focus on vital health metrics. The interface is designed to provide clear visualization of health data trends and current patient status.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Patient Information Display**: View detailed patient profile information
+- **Blood Pressure Tracking**: Interactive chart showing blood pressure history
+- **Vital Signs Monitoring**: Real-time display of respiratory rate, temperature, and heart rate
+- **Diagnostic List**: Complete listing of patient diagnoses with status indicators
+- **Lab Results Access**: Quick access to patient lab documents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React.js
+- Chart.js for data visualization
+- CSS3 with Flexbox layout
+- Fetch API for data retrieval
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup and Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/patient-dashboard.git
+   cd patient-dashboard
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Create a `.env` file in the root directory with your API credentials:
+   ```
+   REACT_APP_API_USERNAME=your_api_username
+   REACT_APP_API_PASSWORD=your_api_password
+   REACT_APP_API_ENDPOINT=https://api-endpoint-url/patients
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+5. The application will open in your browser at `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+├── public/               # Public assets
+├── src/                  # Source files
+│   ├── api/              # API service modules
+│   ├── components/       # React components
+│   ├── hooks/            # Custom React hooks
+│   ├── pages/            # Page components
+│   ├── styles/           # CSS files
+│   ├── App.js            # Main app component
+│   └── index.js          # App entry point
+└── README.md             # Project documentation
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API Integration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project integrates with the Coalition Technologies Patient Data API to fetch and display patient information. The dashboard is configured to display data for a specific patient (Jessica Taylor) but can be extended to support multiple patients.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application provides a sidebar for patient navigation, with Jessica Taylor selected by default. The main content area displays vital signs and diagnostic information for the selected patient.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The top navigation bar allows quick access to other sections of the healthcare application (Overview, Schedule, Messages, Transactions).
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Design inspired by modern healthcare dashboards
+- UI layout based on Adobe XD template created by Coalition Technologies
+- Chart implementation powered by Chart.js
