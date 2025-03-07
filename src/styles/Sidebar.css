@@ -1,0 +1,92 @@
+.sidebar {
+  width: 320px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  position: absolute; /* Changed to absolute positioning */
+  top: 100px; /* Position below the topbar */
+  left: 0; /* Position at the left edge */
+  height: calc(100vh - 100px - 15px); /* Adjust height for positioning */
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-icon-button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #777;
+  cursor: pointer;
+}
+
+.patients-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.patient-item:hover {
+  background-color: #f9f9f9;
+}
+
+.patient-item.active {
+  background-color: #E8FFF9;
+}
+
+.patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.patient-info {
+  flex: 1;
+}
+
+.patient-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.patient-details {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.patient-menu {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #777;
+  cursor: pointer;
+}

@@ -1,0 +1,168 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  height: 70px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin: 15px 15px 0 15px; /* Added margins all around */
+  position: absolute; /* Changed to absolute positioning */
+  top: 0; /* Position at the top */
+  left: 50px; /* Position at the left */
+  width: calc(100% - 320px - 30px); /* Adjust width to account for sidebar width */
+  z-index: 10; /* Ensure topbar is above other elements */
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: 10px; /* Add some padding on the left */
+}
+
+/* Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #00e5be;
+  transform: rotate(-15deg);
+  left: 0;
+  top: 0;
+}
+
+.logo-square {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #1e3a8a;
+  transform: rotate(45deg);
+  right: 2px;
+  bottom: 5px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2b4b;
+}
+
+/* Tech part styling */
+.logo-text::before {
+  content: "Tech";
+  color: #1a2b4b;
+}
+
+/* Care part styling */
+.logo-text::after {
+  content: "Care";
+  color: #1a2b4b;
+}
+
+/* Rest of your CSS remains the same */
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item.active .nav-link {
+  background-color: #00E5BE;
+  color: white;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-icon {
+  margin-right: 8px;
+}
+
+/* TopBar.css */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between avatar and name */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #777;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+}
+
+.settings-button, .menu-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.settings-button:hover, .menu-button:hover {
+  color: #333;
+}
